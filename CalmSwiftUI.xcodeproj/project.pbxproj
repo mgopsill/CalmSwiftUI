@@ -14,6 +14,7 @@
 		4DA95E622417E98400746943 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA95E612417E98400746943 /* Preview Assets.xcassets */; };
 		4DA95E652417E98400746943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA95E632417E98400746943 /* LaunchScreen.storyboard */; };
 		4DA95E702417E98500746943 /* CalmSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E6F2417E98500746943 /* CalmSwiftUITests.swift */; };
+		4DA95E862418CA6500746943 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E852418CA6500746943 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		4DA95E6B2417E98500746943 /* CalmSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalmSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA95E6F2417E98500746943 /* CalmSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmSwiftUITests.swift; sourceTree = "<group>"; };
 		4DA95E712417E98500746943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DA95E852418CA6500746943 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				4DA95E582417E98200746943 /* AppDelegate.swift */,
+				4DA95E852418CA6500746943 /* AppView.swift */,
 				4DA95E5A2417E98200746943 /* SceneDelegate.swift */,
 				4DA95E5C2417E98200746943 /* ContentView.swift */,
 				4DA95E5E2417E98400746943 /* Assets.xcassets */,
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA95E862418CA6500746943 /* AppView.swift in Sources */,
 				4DA95E592417E98200746943 /* AppDelegate.swift in Sources */,
 				4DA95E5B2417E98200746943 /* SceneDelegate.swift in Sources */,
 				4DA95E5D2417E98200746943 /* ContentView.swift in Sources */,

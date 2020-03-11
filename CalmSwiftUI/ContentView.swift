@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        let colors = [Color.red, Color.yellow, Color.blue, Color.black]
+        let random = Int.random(in: 0...3)
+        return colors[random]
     }
 }
 
