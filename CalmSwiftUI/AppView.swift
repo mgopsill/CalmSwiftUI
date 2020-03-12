@@ -18,22 +18,23 @@ struct AppView: View {
                     List {
                         Text(" ").frame(height: 200).listRowBackground(Color.red)
                         Text(" ").frame(height: 200).listRowBackground(Color.blue)
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(0..<4) { _ in
+                                    NarrowTileView()
+                                }
+                            }
+                        }
                         Text(" ").frame(height: 200).listRowBackground(Color.orange)
-                        Text(" ").frame(height: 200).listRowBackground(Color.yellow)
-                        
-                        Text(" ").frame(height: 200).listRowBackground(Color.red)
-                        Text(" ").frame(height: 200).listRowBackground(Color.blue)
-                        Text(" ").frame(height: 200).listRowBackground(Color.orange)
-                        Text(" ").frame(height: 200).listRowBackground(Color.yellow)
                     }
                 } else if self.index == 1 {
-                    Color.red.edgesIgnoringSafeArea(.all)
+                    Color.red
                 } else if self.index == 2 {
-                    Color.yellow.edgesIgnoringSafeArea(.all)
+                    Color.yellow
                 } else if self.index == 3 {
-                    Color.orange.edgesIgnoringSafeArea(.all)
+                    Color.orange
                 } else if self.index == 4 {
-                    Color.white.edgesIgnoringSafeArea(.all)
+                    Color.white
                 }
             }
             VStack {

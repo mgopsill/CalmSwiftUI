@@ -18,6 +18,7 @@
 		4DA95E652417E98400746943 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA95E632417E98400746943 /* LaunchScreen.storyboard */; };
 		4DA95E702417E98500746943 /* CalmSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E6F2417E98500746943 /* CalmSwiftUITests.swift */; };
 		4DA95E862418CA6500746943 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E852418CA6500746943 /* AppView.swift */; };
+		4DD6FFA5241A830B0082A6CC /* NarrowTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		4DA95E6F2417E98500746943 /* CalmSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmSwiftUITests.swift; sourceTree = "<group>"; };
 		4DA95E712417E98500746943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA95E852418CA6500746943 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrowTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4D460EE4241A41BE00741AB0 /* Extensions */,
 				4DA95E582417E98200746943 /* AppDelegate.swift */,
 				4DA95E852418CA6500746943 /* AppView.swift */,
+				4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */,
 				4D460EEA241A428600741AB0 /* TabBar.swift */,
 				4DA95E5A2417E98200746943 /* SceneDelegate.swift */,
 				4DA95E5E2417E98400746943 /* Assets.xcassets */,
@@ -230,6 +233,7 @@
 			files = (
 				4D460EE8241A41ED00741AB0 /* UIView+Extensions.swift in Sources */,
 				4DA95E862418CA6500746943 /* AppView.swift in Sources */,
+				4DD6FFA5241A830B0082A6CC /* NarrowTileView.swift in Sources */,
 				4DA95E592417E98200746943 /* AppDelegate.swift in Sources */,
 				4D460EEB241A428600741AB0 /* TabBar.swift in Sources */,
 				4D460EED241A43B800741AB0 /* Color+Extensions.swift in Sources */,
