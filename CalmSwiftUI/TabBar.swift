@@ -74,7 +74,7 @@ struct TabBar: View {
         }
         .padding(.top, 10)
         .frame(width: UIScreen.main.bounds.width)
-        .background(LinearGradient(gradient: Gradient(colors: [.blue, .calmDarkBlue]), startPoint: .top, endPoint: .bottom))
+        .background(LinearGradient(gradient: Gradient(colors: [.blue, .calmDarkBlue]), startPoint: .top, endPoint: .bottom).opacity(0.95))
         .foregroundColor(.calmLightGray)
         .animation(.default)
     }

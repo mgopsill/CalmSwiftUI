@@ -12,19 +12,19 @@ struct AppView: View {
     @State var index = 0
     
     var body: some View {
-        VStack {
+        ZStack {
             ZStack {
                 if self.index == 0 {
                     List {
-                        Text("1").frame(height: 200)
-                        Text("2").frame(height: 200)
-                        Text("1").frame(height: 200)
-                        Text("2").frame(height: 200)
+                        Text(" ").frame(height: 200).listRowBackground(Color.red)
+                        Text(" ").frame(height: 200).listRowBackground(Color.blue)
+                        Text(" ").frame(height: 200).listRowBackground(Color.orange)
+                        Text(" ").frame(height: 200).listRowBackground(Color.yellow)
                         
-                        Text("1").frame(height: 200)
-                        Text("2").frame(height: 200)
-                        Text("1").frame(height: 200)
-                        Text("2").frame(height: 200)
+                        Text(" ").frame(height: 200).listRowBackground(Color.red)
+                        Text(" ").frame(height: 200).listRowBackground(Color.blue)
+                        Text(" ").frame(height: 200).listRowBackground(Color.orange)
+                        Text(" ").frame(height: 200).listRowBackground(Color.yellow)
                     }
                 } else if self.index == 1 {
                     Color.red.edgesIgnoringSafeArea(.all)
@@ -36,9 +36,12 @@ struct AppView: View {
                     Color.white.edgesIgnoringSafeArea(.all)
                 }
             }
-            
-            TabBar(index: $index)
-                .cornerRadius(20, corners: [.topLeft, .topRight])
+            VStack {
+                Spacer()
+                TabBar(index: $index)
+                    .cornerRadius(20, corners: [.topLeft, .topRight])
+                
+            }
         }.edgesIgnoringSafeArea(.all)
     }
 }
