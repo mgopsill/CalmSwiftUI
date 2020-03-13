@@ -18,36 +18,12 @@ struct AppView: View {
                 if self.index == 0 {
                     List {
                         Text(" ").frame(height: 500).listRowBackground(Color.blue)
-                        CalmSectionHeader()
-                        WideTileView()
-                        WideTileView()
-                        CalmSectionHeader()
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(0..<4) { _ in
-                                    NarrowTileView()
-                                }
-                            }.padding([.leading, .trailing])
-                        }.listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                        
-                        CalmSectionHeader()
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(0..<4) { _ in
-                                    NarrowTileView()
-                                }
-                            }.padding([.leading, .trailing])
-                        }.listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                        
-                        CalmSectionHeader()
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack(spacing: 20) {
-                                ForEach(0..<4) { _ in
-                                    NarrowTileView()
-                                }
-                            }.padding([.leading, .trailing])
-                        }.listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
-                    }.background(Color.blue)
+                        WideTileRow()
+                        NarrowTileRow()
+                        NarrowTileRow()
+                        NarrowTileRow()
+                    }
+                    .background(Color.blue)
                 } else if self.index == 1 {
                     Color.red
                 } else if self.index == 2 {

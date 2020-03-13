@@ -11,6 +11,8 @@
 		4D216E17241BBD230040F87D /* meditations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D216E16241BBD230040F87D /* meditations.json */; };
 		4D216E1A241BBD900040F87D /* Meditations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D216E19241BBD900040F87D /* Meditations.swift */; };
 		4D216E1C241BBE6E0040F87D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D216E1B241BBE6E0040F87D /* NetworkManager.swift */; };
+		4D2171AF241BC7480040F87D /* WideTileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2171AE241BC7480040F87D /* WideTileRow.swift */; };
+		4D2171B1241BC7F00040F87D /* NarrowTileRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2171B0241BC7F00040F87D /* NarrowTileRow.swift */; };
 		4D460EE6241A41CE00741AB0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EE5241A41CE00741AB0 /* RoundedCorner.swift */; };
 		4D460EE8241A41ED00741AB0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EE7241A41ED00741AB0 /* UIView+Extensions.swift */; };
 		4D460EEB241A428600741AB0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EEA241A428600741AB0 /* TabBar.swift */; };
@@ -41,6 +43,8 @@
 		4D216E16241BBD230040F87D /* meditations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = meditations.json; sourceTree = "<group>"; };
 		4D216E19241BBD900040F87D /* Meditations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditations.swift; sourceTree = "<group>"; };
 		4D216E1B241BBE6E0040F87D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4D2171AE241BC7480040F87D /* WideTileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideTileRow.swift; sourceTree = "<group>"; };
+		4D2171B0241BC7F00040F87D /* NarrowTileRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrowTileRow.swift; sourceTree = "<group>"; };
 		4D460EE5241A41CE00741AB0 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		4D460EE7241A41ED00741AB0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4D460EEA241A428600741AB0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
@@ -121,10 +125,12 @@
 				4DA95E852418CA6500746943 /* AppView.swift */,
 				4D5533B8241B71BC0011787B /* CalmSectionHeader.swift */,
 				4D216E19241BBD900040F87D /* Meditations.swift */,
+				4D2171B0241BC7F00040F87D /* NarrowTileRow.swift */,
 				4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */,
 				4D216E1B241BBE6E0040F87D /* NetworkManager.swift */,
 				4D460EEA241A428600741AB0 /* TabBar.swift */,
 				4DA95E5A2417E98200746943 /* SceneDelegate.swift */,
+				4D2171AE241BC7480040F87D /* WideTileRow.swift */,
 				4D216E12241BA8080040F87D /* WideTileView.swift */,
 				4DA95E5E2417E98400746943 /* Assets.xcassets */,
 				4DA95E632417E98400746943 /* LaunchScreen.storyboard */,
@@ -255,12 +261,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D2171AF241BC7480040F87D /* WideTileRow.swift in Sources */,
 				4D216E1C241BBE6E0040F87D /* NetworkManager.swift in Sources */,
 				4D216E1A241BBD900040F87D /* Meditations.swift in Sources */,
 				4D460EE8241A41ED00741AB0 /* UIView+Extensions.swift in Sources */,
 				4D216E13241BA8080040F87D /* WideTileView.swift in Sources */,
 				4DA95E862418CA6500746943 /* AppView.swift in Sources */,
 				4DD6FFA5241A830B0082A6CC /* NarrowTileView.swift in Sources */,
+				4D2171B1241BC7F00040F87D /* NarrowTileRow.swift in Sources */,
 				4D5533B9241B71BC0011787B /* CalmSectionHeader.swift in Sources */,
 				4DA95E592417E98200746943 /* AppDelegate.swift in Sources */,
 				4D460EEB241A428600741AB0 /* TabBar.swift in Sources */,
