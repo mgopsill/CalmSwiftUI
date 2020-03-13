@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D216E13241BA8080040F87D /* WideTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D216E12241BA8080040F87D /* WideTileView.swift */; };
+		4D216E17241BBD230040F87D /* meditations.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D216E16241BBD230040F87D /* meditations.json */; };
+		4D216E1A241BBD900040F87D /* Meditations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D216E19241BBD900040F87D /* Meditations.swift */; };
+		4D216E1C241BBE6E0040F87D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D216E1B241BBE6E0040F87D /* NetworkManager.swift */; };
 		4D460EE6241A41CE00741AB0 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EE5241A41CE00741AB0 /* RoundedCorner.swift */; };
 		4D460EE8241A41ED00741AB0 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EE7241A41ED00741AB0 /* UIView+Extensions.swift */; };
 		4D460EEB241A428600741AB0 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EEA241A428600741AB0 /* TabBar.swift */; };
 		4D460EED241A43B800741AB0 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D460EEC241A43B800741AB0 /* Color+Extensions.swift */; };
+		4D5533B9241B71BC0011787B /* CalmSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5533B8241B71BC0011787B /* CalmSectionHeader.swift */; };
 		4DA95E592417E98200746943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E582417E98200746943 /* AppDelegate.swift */; };
 		4DA95E5B2417E98200746943 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E5A2417E98200746943 /* SceneDelegate.swift */; };
 		4DA95E5F2417E98400746943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA95E5E2417E98400746943 /* Assets.xcassets */; };
@@ -32,10 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D216E12241BA8080040F87D /* WideTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WideTileView.swift; sourceTree = "<group>"; };
+		4D216E16241BBD230040F87D /* meditations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = meditations.json; sourceTree = "<group>"; };
+		4D216E19241BBD900040F87D /* Meditations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditations.swift; sourceTree = "<group>"; };
+		4D216E1B241BBE6E0040F87D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4D460EE5241A41CE00741AB0 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		4D460EE7241A41ED00741AB0 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		4D460EEA241A428600741AB0 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		4D460EEC241A43B800741AB0 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		4D5533B8241B71BC0011787B /* CalmSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmSectionHeader.swift; sourceTree = "<group>"; };
 		4DA95E552417E98200746943 /* CalmSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalmSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DA95E582417E98200746943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DA95E5A2417E98200746943 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D216E18241BBD410040F87D /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				4D216E16241BBD230040F87D /* meditations.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 		4D460EE4241A41BE00741AB0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,15 +117,20 @@
 		4DA95E572417E98200746943 /* CalmSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				4D460EE4241A41BE00741AB0 /* Extensions */,
 				4DA95E582417E98200746943 /* AppDelegate.swift */,
 				4DA95E852418CA6500746943 /* AppView.swift */,
+				4D5533B8241B71BC0011787B /* CalmSectionHeader.swift */,
+				4D216E19241BBD900040F87D /* Meditations.swift */,
 				4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */,
+				4D216E1B241BBE6E0040F87D /* NetworkManager.swift */,
 				4D460EEA241A428600741AB0 /* TabBar.swift */,
 				4DA95E5A2417E98200746943 /* SceneDelegate.swift */,
+				4D216E12241BA8080040F87D /* WideTileView.swift */,
 				4DA95E5E2417E98400746943 /* Assets.xcassets */,
 				4DA95E632417E98400746943 /* LaunchScreen.storyboard */,
 				4DA95E662417E98400746943 /* Info.plist */,
+				4D216E18241BBD410040F87D /* JSONs */,
+				4D460EE4241A41BE00741AB0 /* Extensions */,
 				4DA95E602417E98400746943 /* Preview Content */,
 			);
 			path = CalmSwiftUI;
@@ -214,6 +237,7 @@
 				4DA95E652417E98400746943 /* LaunchScreen.storyboard in Resources */,
 				4DA95E622417E98400746943 /* Preview Assets.xcassets in Resources */,
 				4DA95E5F2417E98400746943 /* Assets.xcassets in Resources */,
+				4D216E17241BBD230040F87D /* meditations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,9 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D216E1C241BBE6E0040F87D /* NetworkManager.swift in Sources */,
+				4D216E1A241BBD900040F87D /* Meditations.swift in Sources */,
 				4D460EE8241A41ED00741AB0 /* UIView+Extensions.swift in Sources */,
+				4D216E13241BA8080040F87D /* WideTileView.swift in Sources */,
 				4DA95E862418CA6500746943 /* AppView.swift in Sources */,
 				4DD6FFA5241A830B0082A6CC /* NarrowTileView.swift in Sources */,
+				4D5533B9241B71BC0011787B /* CalmSectionHeader.swift in Sources */,
 				4DA95E592417E98200746943 /* AppDelegate.swift in Sources */,
 				4D460EEB241A428600741AB0 /* TabBar.swift in Sources */,
 				4D460EED241A43B800741AB0 /* Color+Extensions.swift in Sources */,

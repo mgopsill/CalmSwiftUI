@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct AppView: View {
+    @State var networkManager = NetworkManager()
     @State var index = 0
     
     var body: some View {
@@ -16,17 +17,37 @@ struct AppView: View {
             ZStack {
                 if self.index == 0 {
                     List {
-                        Text(" ").frame(height: 200).listRowBackground(Color.red)
-                        Text(" ").frame(height: 200).listRowBackground(Color.blue)
+                        Text(" ").frame(height: 500).listRowBackground(Color.blue)
+                        CalmSectionHeader()
+                        WideTileView()
+                        WideTileView()
+                        CalmSectionHeader()
                         ScrollView(.horizontal, showsIndicators: false) {
                             HStack(spacing: 20) {
                                 ForEach(0..<4) { _ in
                                     NarrowTileView()
                                 }
-                            }
-                        }
-                        Text(" ").frame(height: 200).listRowBackground(Color.orange)
-                    }
+                            }.padding([.leading, .trailing])
+                        }.listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                        
+                        CalmSectionHeader()
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(0..<4) { _ in
+                                    NarrowTileView()
+                                }
+                            }.padding([.leading, .trailing])
+                        }.listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                        
+                        CalmSectionHeader()
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack(spacing: 20) {
+                                ForEach(0..<4) { _ in
+                                    NarrowTileView()
+                                }
+                            }.padding([.leading, .trailing])
+                        }.listRowInsets(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 0))
+                    }.background(Color.blue)
                 } else if self.index == 1 {
                     Color.red
                 } else if self.index == 2 {
@@ -43,7 +64,13 @@ struct AppView: View {
                     .cornerRadius(20, corners: [.topLeft, .topRight])
                 
             }
-        }.edgesIgnoringSafeArea(.all)
+        }
+        .edgesIgnoringSafeArea(.all)
+        .onAppear() {
+            UITableView.appearance().backgroundColor = .clear
+            UITableView.appearance().separatorColor = .clear
+            UITableViewCell.appearance().backgroundColor = .clear
+        }
     }
 }
 

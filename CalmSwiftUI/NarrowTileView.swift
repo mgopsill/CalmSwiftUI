@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct NarrowTileView: View {
+struct NarrowTileView: View {    
     var body: some View {
         ZStack {
             Color.green
@@ -19,7 +19,7 @@ struct NarrowTileView: View {
                     .padding([.top, .bottom], 4)
                     .font(Font.system(size: 10))
                     .foregroundColor(.white)
-                    .background(Color.gray.opacity(0.7))
+                    .background(Color.calmDarkGray.opacity(0.7))
                     .clipShape(Capsule())
                 Spacer()
                 }
@@ -29,14 +29,14 @@ struct NarrowTileView: View {
             VStack {
                 Spacer()
                 Text("Meditation with a Legend")
-                    .frame(width: 190)
+                    .frame(width: 200)
                     .padding([.bottom, .top], 8)
-                    .font(Font.system(size: 10))
+                    .font(Font.system(size: 12))
                     .foregroundColor(.white)
-                    .background(Color.gray.opacity(0.7))
+                    .background(Color.calmDarkGray.opacity(0.7))
             }
                 
-        }.frame(width: 180, height: 230)
+        }.frame(width: 200, height: 250)
         .cornerRadius(15)
     }
 }

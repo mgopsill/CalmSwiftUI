@@ -10,5 +10,6 @@ import SwiftUI
 
 extension Color {
     static let calmLightGray = Color(red: 190 / 256, green: 210 / 256, blue: 235 / 256)
+    static let calmDarkGray = Color(red: 80 / 256, green: 80 / 256, blue: 80 / 256)
     static let calmDarkBlue = Color(red: 57 / 256, green: 81 / 256, blue: 169 / 256)
 }

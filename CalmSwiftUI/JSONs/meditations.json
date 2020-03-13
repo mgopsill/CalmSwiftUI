@@ -1,0 +1,20 @@
+{
+    "meditations": [
+        {
+            "id": 1,
+            "title": "Daily Calm",
+            "duration": "10m",
+            "author": "Mar 13 - Sleep",
+            "imageURL": "https://picsum.photos/200",
+            "type": 0
+        },
+        {
+            "id": 1,
+            "title": "The Grand Plan to Rise and Shine",
+            "duration": "1h 03m",
+            "author": "Frankie Bridge",
+            "imageURL": "https://picsum.photos/200",
+            "type": 0
+        }
+    ]
+}
