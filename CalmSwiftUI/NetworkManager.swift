@@ -20,20 +20,9 @@ final class NetworkManager: ObservableObject {
         let url = URL(fileURLWithPath: path)
         
         cancellable = URLSession.shared.dataTaskPublisher(for: url)
-            .map {
-                let decode = JSONDecoder()
-                let x = try! decode.decode(MeditationsResponseModel.self, from: $0.data)
-                print($0.data)
-                print(x)
-                return $0.data }
+            .map {$0.data }
             .decode(type: MeditationsResponseModel.self, decoder: JSONDecoder())
-            .map {
-                print("got here")
-                print("got \($0.meditations)")
-
-                return $0.meditations
-                
-        }
+            .map { $0.meditations }
             .receive(on: RunLoop.main)
             .replaceError(with: [])
             .eraseToAnyPublisher()
