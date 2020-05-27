@@ -22,6 +22,7 @@ struct AppView: View {
                         NarrowTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
+                        Spacer(minLength: 60.0)
                     }
                     .background(Color.blue)
                 } else if self.index == 1 {
@@ -44,6 +45,7 @@ struct AppView: View {
             UITableView.appearance().backgroundColor = .clear
             UITableView.appearance().separatorColor = .clear
             UITableViewCell.appearance().backgroundColor = .clear
+            UITableView.appearance().showsVerticalScrollIndicator = false
         }
     }
 }
