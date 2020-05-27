@@ -37,8 +37,6 @@ struct AppView: View {
             VStack {
                 Spacer()
                 TabBar(index: $index)
-                    .cornerRadius(20, corners: [.topLeft, .topRight])
-                
             }
         }
         .edgesIgnoringSafeArea(.all)

@@ -77,5 +77,12 @@ struct TabBar: View {
         .background(LinearGradient(gradient: Gradient(colors: [.blue, .calmDarkBlue]), startPoint: .top, endPoint: .bottom).opacity(0.95))
         .foregroundColor(.calmLightGray)
         .animation(.default)
+        .cornerRadius(20, corners: [.topLeft, .topRight])
+    }
+}
+
+struct TabBar_Previews: PreviewProvider {
+    static var previews: some View {
+        TabBar(index: .constant(0))
     }
 }
