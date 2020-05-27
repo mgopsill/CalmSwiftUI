@@ -8,13 +8,14 @@
 
 import SwiftUI
 
-struct NarrowTileView: View {    
+struct NarrowTileView: View {
+    let meditation: Meditation
     var body: some View {
         ZStack {
             Color.green
             HStack {
                 VStack {
-                Text("1h 01m")
+                Text(meditation.duration)
                     .padding([.leading, .trailing], 8)
                     .padding([.top, .bottom], 4)
                     .font(Font.system(size: 10))
@@ -28,7 +29,7 @@ struct NarrowTileView: View {
             
             VStack {
                 Spacer()
-                Text("Meditation with a Legend")
+                Text(meditation.title)
                     .frame(width: 200)
                     .padding([.bottom, .top], 8)
                     .font(Font.system(size: 12))
@@ -43,6 +44,6 @@ struct NarrowTileView: View {
 
 struct NarrowTileView_Previews: PreviewProvider {
     static var previews: some View {
-        NarrowTileView()
+        NarrowTileView(meditation: Meditation.fake)
     }
 }

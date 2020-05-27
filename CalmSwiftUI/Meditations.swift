@@ -22,4 +22,12 @@ extension Meditation {
     var imageUrl: URL {
         return URL(string: imageURL)!
     }
+    
+    static var fake: Meditation {
+        return Meditation(id: 2,
+                          title: "Title",
+                          duration: "1h 0m",
+                          author: "Steve",
+                          imageURL: "https://picsum.photos/200")
+    }
 }

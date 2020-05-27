@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct AppView: View {
-    @State var networkManager = NetworkManager()
+    @ObservedObject var networkManager = NetworkManager()
     @State var index = 0
     
     var body: some View {
@@ -19,9 +19,9 @@ struct AppView: View {
                     List {
                         Text(" ").frame(height: 500).listRowBackground(Color.blue)
                         WideTileRow()
-                        NarrowTileRow()
-                        NarrowTileRow()
-                        NarrowTileRow()
+                        NarrowTileRow(meditations: networkManager.meditations)
+                        NarrowTileRow(meditations: networkManager.meditations)
+                        NarrowTileRow(meditations: networkManager.meditations)
                     }
                     .background(Color.blue)
                 } else if self.index == 1 {

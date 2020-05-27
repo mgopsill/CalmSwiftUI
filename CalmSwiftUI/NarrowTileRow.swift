@@ -9,13 +9,15 @@
 import SwiftUI
 
 struct NarrowTileRow: View {
+    let meditations: [Meditation]
+    
     var body: some View {
         VStack {
             CalmSectionHeader().padding([.leading])
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 20) {
-                    ForEach(0..<4) { _ in
-                        NarrowTileView()
+                    ForEach(meditations) { meditation in
+                        NarrowTileView(meditation: meditation)
                     }
                 }.padding([.leading, .trailing])
             }
@@ -25,6 +27,6 @@ struct NarrowTileRow: View {
 
 struct NarrowTileRow_Previews: PreviewProvider {
     static var previews: some View {
-        NarrowTileRow()
+        NarrowTileRow(meditations: [Meditation.fake])
     }
 }
