@@ -27,11 +27,8 @@ final class ImageLoader: ObservableObject {
                 .eraseToAnyPublisher()
                 .assign(to: \.image, on: self)
             
-            let cacheImage = $image.sink { image in
-                if let image = image {
-                    Current.cache.cacheImageForURL(image,url)
-                }
-            }
+            let cacheImage = $image.compactMap { $0 }
+                .sink { Current.cache.cacheImageForURL($0,url) }
             
             cancellables?.insert(fetchImage)
             cancellables?.insert(cacheImage)
