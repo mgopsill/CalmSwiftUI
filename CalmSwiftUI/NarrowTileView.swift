@@ -12,7 +12,7 @@ struct NarrowTileView: View {
     let meditation: Meditation
     var body: some View {
         ZStack {
-            Color.green
+            LoadableImage(url: meditation.imageUrl)
             HStack {
                 VStack {
                 Text(meditation.duration)

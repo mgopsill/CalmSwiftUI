@@ -5,7 +5,7 @@
             "title": "Daily Calm",
             "duration": "10m",
             "author": "Mar 13 - Sleep",
-            "imageURL": "https://picsum.photos/200",
+            "imageURL": "https://picsum.photos/id/35/200/300",
             "type": "daily"
         },
         {
@@ -13,7 +13,15 @@
             "title": "The Grand Plan to Rise and Shine",
             "duration": "1h 03m",
             "author": "Frankie Bridge",
-            "imageURL": "https://picsum.photos/200",
+            "imageURL": "https://picsum.photos/id/34/200/300",
+            "type": "daily"
+        },
+        {
+            "id": 3,
+            "title": "Chill Out Man",
+            "duration": "44m",
+            "author": "Steve Rogers",
+            "imageURL": "https://picsum.photos/id/33/200/300",
             "type": "daily"
         }
     ]
