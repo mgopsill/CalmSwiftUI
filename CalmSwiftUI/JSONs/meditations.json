@@ -6,7 +6,7 @@
             "duration": "10m",
             "author": "Mar 13 - Sleep",
             "imageURL": "https://picsum.photos/200",
-            "type": 0
+            "type": "daily"
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "duration": "1h 03m",
             "author": "Frankie Bridge",
             "imageURL": "https://picsum.photos/200",
-            "type": 0
+            "type": "daily"
         }
     ]
 }

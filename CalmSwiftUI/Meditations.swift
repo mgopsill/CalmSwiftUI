@@ -16,6 +16,7 @@ struct Meditation: Codable, Identifiable {
     let id: Int
     let title, duration, author: String
     let imageURL: String
+    let type: MeditationType
 }
 
 extension Meditation {
@@ -28,6 +29,16 @@ extension Meditation {
                           title: "Title",
                           duration: "1h 0m",
                           author: "Steve",
-                          imageURL: "https://picsum.photos/200")
+                          imageURL: "https://picsum.photos/200",
+                          type: .daily)
     }
+}
+
+enum MeditationType: String, Codable {
+    case daily
+    case recent
+    case quick
+    case fitness
+    case sleep
+    case music
 }
