@@ -14,6 +14,10 @@ final class ImageLoader: ObservableObject {
     
     var cancellables: Set<AnyCancellable>? = []
     
+    deinit {
+        cancellables?.forEach { $0.cancel() }
+    }
+    
     init(url: URL) {
         if let image = Current.cache.loadImage(url) {
             self.image = image
