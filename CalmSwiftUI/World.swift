@@ -10,6 +10,7 @@ import Foundation
 
 struct World {
     var cache = Cache()
+    var formatters = Formatters()
 }
 
 var Current = World()
@@ -17,4 +18,8 @@ var Current = World()
 struct Cache {
     var cacheImageForURL = ImageCache.shared.cache
     var loadImage = ImageCache.shared.loadImage(for:)
+}
+
+struct Formatters {
+    var dateFormatterForString = FormattersFactory.dateFormatter(for:)
 }

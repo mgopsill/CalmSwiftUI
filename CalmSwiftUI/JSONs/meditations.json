@@ -5,6 +5,7 @@
             "title": "Daily Calm",
             "duration": "10m",
             "author": "Mar 13 - Sleep",
+            "date": "2020-05-28T05:02:04+0000",
             "imageURL": "https://picsum.photos/id/35/200/300",
             "type": "daily"
         },
@@ -13,6 +14,7 @@
             "title": "The Grand Plan to Rise and Shine",
             "duration": "1h 03m",
             "author": "Frankie Bridge",
+            "date": "2020-05-28T05:02:04+0000",
             "imageURL": "https://picsum.photos/id/34/200/300",
             "type": "daily"
         },
@@ -21,6 +23,7 @@
             "title": "Chill Out Man",
             "duration": "44m",
             "author": "Steve Rogers",
+            "date": "2020-05-28T05:02:04+0000",
             "imageURL": "https://picsum.photos/id/33/200/300",
             "type": "daily"
         }

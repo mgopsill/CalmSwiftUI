@@ -18,7 +18,7 @@ struct AppView: View {
                 if self.index == 0 {
                     List {
                         Text(" ").frame(height: 500).listRowBackground(Color.blue)
-                        WideTileRow()
+                        WideTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)

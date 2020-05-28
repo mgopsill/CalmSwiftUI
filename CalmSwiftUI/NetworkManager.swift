@@ -18,10 +18,13 @@ final class NetworkManager: ObservableObject {
         let bundle = Bundle(for: type(of: self))
         guard let path = bundle.path(forResource: "meditations", ofType: "json") else { return }
         let url = URL(fileURLWithPath: path)
+    
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .iso8601
         
         cancellable = URLSession.shared.dataTaskPublisher(for: url)
             .map {$0.data }
-            .decode(type: MeditationsResponseModel.self, decoder: JSONDecoder())
+            .decode(type: MeditationsResponseModel.self, decoder: decoder)
             .map { $0.meditations }
             .receive(on: RunLoop.main)
             .replaceError(with: [])

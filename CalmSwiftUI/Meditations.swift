@@ -15,6 +15,7 @@ struct MeditationsResponseModel: Codable {
 struct Meditation: Codable, Identifiable {
     let id: Int
     let title, duration, author: String
+    let date: Date
     let imageURL: String
     let type: MeditationType
 }
@@ -29,6 +30,7 @@ extension Meditation {
                           title: "Title",
                           duration: "1h 0m",
                           author: "Steve",
+                          date: Date(),
                           imageURL: "https://picsum.photos/200",
                           type: .daily)
     }

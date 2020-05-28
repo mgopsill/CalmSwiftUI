@@ -31,6 +31,7 @@
 		4DA95E702417E98500746943 /* CalmSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E6F2417E98500746943 /* CalmSwiftUITests.swift */; };
 		4DA95E862418CA6500746943 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA95E852418CA6500746943 /* AppView.swift */; };
 		4DD6FFA5241A830B0082A6CC /* NarrowTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */; };
+		4DE70D66247F81120089D7B0 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE70D65247F81120089D7B0 /* Formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		4DA95E712417E98500746943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DA95E852418CA6500746943 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrowTileView.swift; sourceTree = "<group>"; };
+		4DE70D65247F81120089D7B0 /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,18 +137,19 @@
 				4DA95E582417E98200746943 /* AppDelegate.swift */,
 				4DA95E852418CA6500746943 /* AppView.swift */,
 				4D5533B8241B71BC0011787B /* CalmSectionHeader.swift */,
+				4DE70D65247F81120089D7B0 /* Formatters.swift */,
 				4D3C4BAE247E781F00A36F9D /* ImageCache.swift */,
 				4D3C4BAA247E67B300A36F9D /* ImageLoader.swift */,
-				4D3C4BB0247E783800A36F9D /* World.swift */,
 				4D3C4BA8247E67B200A36F9D /* LoadableImage.swift */,
 				4D216E19241BBD900040F87D /* Meditations.swift */,
 				4D2171B0241BC7F00040F87D /* NarrowTileRow.swift */,
 				4DD6FFA4241A830B0082A6CC /* NarrowTileView.swift */,
 				4D216E1B241BBE6E0040F87D /* NetworkManager.swift */,
-				4D460EEA241A428600741AB0 /* TabBar.swift */,
 				4DA95E5A2417E98200746943 /* SceneDelegate.swift */,
+				4D460EEA241A428600741AB0 /* TabBar.swift */,
 				4D2171AE241BC7480040F87D /* WideTileRow.swift */,
 				4D216E12241BA8080040F87D /* WideTileView.swift */,
+				4D3C4BB0247E783800A36F9D /* World.swift */,
 				4DA95E5E2417E98400746943 /* Assets.xcassets */,
 				4DA95E632417E98400746943 /* LaunchScreen.storyboard */,
 				4DA95E662417E98400746943 /* Info.plist */,
@@ -294,6 +297,7 @@
 				4D460EEB241A428600741AB0 /* TabBar.swift in Sources */,
 				4D460EED241A43B800741AB0 /* Color+Extensions.swift in Sources */,
 				4D460EE6241A41CE00741AB0 /* RoundedCorner.swift in Sources */,
+				4DE70D66247F81120089D7B0 /* Formatters.swift in Sources */,
 				4DA95E5B2417E98200746943 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

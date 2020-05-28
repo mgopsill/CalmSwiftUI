@@ -9,17 +9,19 @@
 import SwiftUI
 
 struct WideTileRow: View {
+    let meditations: [Meditation]
     var body: some View {
         VStack {
             CalmSectionHeader()
-            WideTileView()
-            WideTileView()
+            ForEach(meditations) {
+                WideTileView(meditation: $0)
+            }
         }
     }
 }
 
 struct WideTileRow_Previews: PreviewProvider {
     static var previews: some View {
-        WideTileRow()
+        WideTileRow(meditations: [Meditation.fake])
     }
 }
