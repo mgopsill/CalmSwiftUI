@@ -17,14 +17,13 @@ struct AppView: View {
             ZStack {
                 if self.index == 0 {
                     List {
-                        Text(" ").frame(height: 500).listRowBackground(Color.blue)
+                        Text(" ").frame(height: 500).listRowBackground(Color.clear)
                         WideTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
                         NarrowTileRow(meditations: networkManager.meditations)
                         Spacer(minLength: 60.0)
-                    }
-                    .background(Color.blue)
+                    }.background(VideoPlayerView())
                 } else if self.index == 1 {
                     Color.red
                 } else if self.index == 2 {
