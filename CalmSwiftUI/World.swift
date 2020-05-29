@@ -16,7 +16,7 @@ struct World {
 var Current = World()
 
 struct Cache {
-    var cacheImageForURL = ImageCache.shared.cache
+    var cacheImageForURL = ImageCache.shared.cacheImage
     var loadImage = ImageCache.shared.loadImage(for:)
 }
 

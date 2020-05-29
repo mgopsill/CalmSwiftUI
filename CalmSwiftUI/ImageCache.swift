@@ -10,45 +10,23 @@ import Combine
 import SwiftUI
 
 final class ImageCache {
-    private init() { }
+    var cacheImage = PassthroughSubject<(Image, URL), Never>()
+    
     static let shared: ImageCache = ImageCache()
-
+    
     private let imageCache = NSCache<AnyObject, AnyObject>()
-
-    func cache(_ image: Image, for key: URL) {
-        let imageToCache = image as AnyObject
-        let key = key as AnyObject
-        imageCache.setObject(imageToCache, forKey: key)
-    }
-
-    func loadImage(for key: URL) -> Image? {
-        return imageCache.object(forKey: key as AnyObject) as? Image
-    }
-}
-
-final class ReactiveImageCache {
-    private init() { }
-    static let shared: ReactiveImageCache = ReactiveImageCache()
-
-    private let imageCache = NSCache<AnyObject, AnyObject>()
-
-    func cache(_ image: Image, for key: URL) {
-        let imageToCache = image as AnyObject
-        let key = key as AnyObject
-        imageCache.setObject(imageToCache, forKey: key)
+    private var cancellables = Set<AnyCancellable>()
+    
+    private init() {
+        cacheImage.sink { (image, url) in
+            let imageToCache = image as AnyObject
+            let key = url as AnyObject
+            self.imageCache.setObject(imageToCache, forKey: key)
+        }.store(in: &cancellables)
     }
     
-    func loadImage(for key: URL) -> Future<Image, Error> {
-        return Future<Image, Error> { promise in
-            if let image = self.imageCache.object(forKey: key as AnyObject) as? Image {
-                promise(.success(image))
-            } else {
-                promise(.failure(ImageCacheError.noCachedImage))
-            }
-        }
-    }
-    
-    enum ImageCacheError: Error {
-        case noCachedImage
+    func loadImage(for key: URL) -> Just<Image?> {
+        let image = self.imageCache.object(forKey: key as AnyObject) as? Image
+        return Just(image)
     }
 }
